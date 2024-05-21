@@ -25,7 +25,7 @@ public:
     bool is(TokenKind K) const { return Kind == K; }
     bool isOneOf(TokenKind K1, TokenKind K2) const { return is(K1) || is(K2); }
     template <typename... Ts>
-    bool isOneof(TokenKind K1, TokenKind K2, Ts... Ks) const { return is(K1) || isOneof(K2, Ks...)}
+    bool isOneOf(TokenKind K1, TokenKind K2, Ts... Ks) const { return is(K1) || isOneOf(K2, Ks...); }
 };
 
 class Lexer {

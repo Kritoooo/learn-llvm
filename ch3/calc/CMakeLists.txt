@@ -26,4 +26,4 @@ if(LLVM_COMPILER_IS_GCC_COMPATIBLE)
   endif()
 endif()
 
-add_subdirectory ("src")
+add_subdirectory ("code")
